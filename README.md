@@ -1,3 +1,43 @@
+Instruction for the teacher on where to find the applied tenchniques
+
+acces control that prevent IDOR.
+
+First of all added middleware that checks if the user is authenticated, if the user isn't it will redirect to the login page
+![image](https://user-images.githubusercontent.com/70522000/121594403-53a3ed80-ca3d-11eb-9126-8a7008cfd35d.png)
+![image](https://user-images.githubusercontent.com/70522000/121595046-2d328200-ca3e-11eb-8e8f-642b01839eec.png)
+
+Besides authenticated users, you can also be an admin
+So first I added the an admin colums to the users table
+![image](https://user-images.githubusercontent.com/70522000/121595310-6ff45a00-ca3e-11eb-886c-b35a50ca1eaa.png)
+![image](https://user-images.githubusercontent.com/70522000/121595654-c5c90200-ca3e-11eb-9fef-c87a18d493bc.png)
+
+Then I defined a gate in the AuthServiceProvider.php called admin-acces which is true if the admin colums is true
+![image](https://user-images.githubusercontent.com/70522000/121595482-9dd99e80-ca3e-11eb-925f-8796cff52cab.png)
+
+Then in the AdminController I use authorize() to make sure it'll only show the admin index page if you are an admin
+![image](https://user-images.githubusercontent.com/70522000/121596007-2f491080-ca3f-11eb-9113-f829e8393de7.png)
+
+In the Dashboard blade I added an admin panel button to the navigation bar, but it only shows if you are an admin
+![image](https://user-images.githubusercontent.com/70522000/121596401-ab435880-ca3f-11eb-9d7b-83254c50ed59.png)
+vs
+![image](https://user-images.githubusercontent.com/70522000/121596481-bd24fb80-ca3f-11eb-9ee9-749cfefbc852.png)
+
+This is done in the Dashboard blade file like this:
+![image](https://user-images.githubusercontent.com/70522000/121596596-eb0a4000-ca3f-11eb-9130-1aabec738a79.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
