@@ -26,7 +26,9 @@ vs
 This is done in the Dashboard blade file like this:
 ![image](https://user-images.githubusercontent.com/70522000/121596596-eb0a4000-ca3f-11eb-9130-1aabec738a79.png)
 
-
+login as admin account: hoeg0001@hz.nl;Admin12345!
+login as non-admin account: make one or hoeg0002@hz.nl;Admin12345!
+    
 
 
 
