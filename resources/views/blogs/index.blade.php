@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Blogs') }}
+            {{ __('blogs') }}
         </h2>
     </x-slot>
     <form  action="{{ route('blogs.create') }}">
