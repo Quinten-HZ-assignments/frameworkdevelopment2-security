@@ -19,6 +19,8 @@ Then in the AdminController I use authorize() to make sure it'll only show the a
 ![image](https://user-images.githubusercontent.com/70522000/121596007-2f491080-ca3f-11eb-9113-f829e8393de7.png)
 
 In the Dashboard blade I added an admin panel button to the navigation bar, but it only shows if you are an admin
+login as admin account: hoeg0001@hz.nl;Admin12345!<br>
+login as non-admin account: make one or hoeg0002@hz.nl;Admin12345!
 ![image](https://user-images.githubusercontent.com/70522000/121596401-ab435880-ca3f-11eb-9d7b-83254c50ed59.png)
 vs
 ![image](https://user-images.githubusercontent.com/70522000/121596481-bd24fb80-ca3f-11eb-9ee9-749cfefbc852.png)
@@ -26,8 +28,7 @@ vs
 This is done in the Dashboard blade file like this:
 ![image](https://user-images.githubusercontent.com/70522000/121596596-eb0a4000-ca3f-11eb-9130-1aabec738a79.png)
 
-login as admin account: hoeg0001@hz.nl;Admin12345!<br>
-login as non-admin account: make one or hoeg0002@hz.nl;Admin12345!
+
     
 
 
