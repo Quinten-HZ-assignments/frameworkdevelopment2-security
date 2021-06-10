@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\MapController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,5 +26,7 @@ Route::get('/dashboard', function () {
 Route::resource('/admin', AdminController::class)->middleware(['auth'])->name('index', 'admin');
 
 Route::resource('/maps', MapController::class)->middleware(['auth'])->name('index', 'maps');
+
+Route::resource('/blogs', BlogController::class)->middleware(['auth'])->name('index', 'blogs');
 
 require __DIR__.'/auth.php';
