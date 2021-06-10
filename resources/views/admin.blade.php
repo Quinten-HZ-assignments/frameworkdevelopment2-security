@@ -14,6 +14,6 @@
             </div>
         </div>
     </div>
-    <h1>hello mr admin!</h1>
+    <h1>hello mr admin! testing in progress</h1>
 </x-app-layout>
 
