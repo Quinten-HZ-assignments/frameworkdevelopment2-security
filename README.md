@@ -1,7 +1,15 @@
 Link to application: http://young-cove-30705.herokuapp.com/
 Instruction for the teacher on where to find the applied techniques
 
-acces control that prevent IDOR.
+prevent snooping and session hijacking by:
+- a session lifetime is 30 minutes maximum
+- if you close the webpage the session is deleted automatically
+- added this in the appserviceprovider.php 
+![image](https://user-images.githubusercontent.com/70522000/121700490-3ec46a00-cad0-11eb-9178-a762317e48e8.png)
+- added SESSION_SECURE_COOKIE = TRUE in Heroku config vars to set secure flag for cookies data when accessing content over HTTPS.: 
+- heroku uses HTTPS by default
+
+acces control that prevent IDOR with:
 
 First of all added middleware that checks if the user is authenticated, if the user isn't it will redirect to the login page
 ![image](https://user-images.githubusercontent.com/70522000/121594403-53a3ed80-ca3d-11eb-9126-8a7008cfd35d.png)
@@ -27,20 +35,6 @@ vs
 
 This is done in the Dashboard blade file like this:
 ![image](https://user-images.githubusercontent.com/70522000/121596596-eb0a4000-ca3f-11eb-9130-1aabec738a79.png)
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
