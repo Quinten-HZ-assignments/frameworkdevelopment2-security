@@ -23,6 +23,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/api', function () {
+    return view('api');
+})->middleware(['auth'])->name('api');
+
 Route::resource('/admin', AdminController::class)->middleware(['auth'])->name('index', 'admin');
 
 Route::resource('/maps', MapController::class)->middleware(['auth'])->name('index', 'maps');

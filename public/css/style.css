@@ -1,0 +1,13 @@
+.title {
+    display: inline-block!important;
+    vertical-align: center!important;
+    margin-right: 1%!important;
+}
+
+#dogs div {
+    background: lightgrey!important;
+    margin: 10px!important;
+    border-style: dashed!important;
+    display: inline-block!important;
+    /*text-align: center;*/
+}
